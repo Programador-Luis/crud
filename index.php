@@ -9,7 +9,6 @@
 <body>
 
     <h1 class="text-center p-3">Registro Criminal</h1>
-    
     <div class="container-fluid row">
         <form class="col-4 p-3" method="POST">
             <h3 class="text-center text-secondary">Registro de sospechosos</h3>
@@ -40,7 +39,12 @@
             <button type="submit" class="btn btn-primary" name="btn-registrar" value="OK">Registrar</button>
         </form>
 
+        
+
         <div class="col-8 p-4">
+            <?php
+                include "controlador/eliminar.php";
+            ?>
             
             <table class="table">
                 <thead>
@@ -69,7 +73,7 @@
                                 <td><?= $datos->cargos ?></td>
                                 <td>
                                     <a href="modificar_persona.php?id=<?= $datos->id_persona ?>"><i class="fa-solid fa-pen-to-square"></i></a>
-                                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                                    <a href="index.php?id=<?= $datos->id_persona ?>"><i class="fa-solid fa-trash"></i></a>
                                 </td>
                             </tr>
 
