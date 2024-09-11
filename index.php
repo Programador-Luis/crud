@@ -41,6 +41,7 @@
         </form>
 
         <div class="col-8 p-4">
+            
             <table class="table">
                 <thead>
                     <tr>
@@ -67,7 +68,7 @@
                                 <td><?= $datos->fecha_nac ?></td>
                                 <td><?= $datos->cargos ?></td>
                                 <td>
-                                    <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                                    <a href="modificar_persona.php?id=<?= $datos->id_persona ?>"><i class="fa-solid fa-pen-to-square"></i></a>
                                     <a href=""><i class="fa-solid fa-trash"></i></a>
                                 </td>
                             </tr>
